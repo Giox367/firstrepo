@@ -24,6 +24,9 @@ console.log(arr);
 
 //console.log(arr);
 
+
+// arr = ['Number','String','Boolean','Undefined','Null','Object']
+
 const main = document.getElementById("main"); // seleziono il div con id main e lo conservo 
 const crcontainer = document.createElement("div"); // creo un elemento div e mi salvo tutto il procedimento in una costante
 crcontainer.classList.add("container"); // aggiungo una classe all'elemento mentre lo creo
