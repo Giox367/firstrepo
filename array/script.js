@@ -46,6 +46,29 @@ for(let i =0;i<arr.length;i++){ // creo un ciclo che esegue istruzione tante vol
 
 }
 
+let j = 0;   // i e j sono standard convenzionali per definire variabili contatore
+
+while(j<arr.length){
+
+    let crdiv = document.createElement("div");
+    let crparag = document.createElement("p");              
+    crcontainer.appendChild(crdiv);
+    crdiv.appendChild(crparag);
+    crparag.innerHTML = `${arr[j]}`
+    j++
+}
+
+for(nome of arr){
+
+    let crdiv = document.createElement("div");
+    let crparag = document.createElement("p");              
+    crcontainer.appendChild(crdiv);
+    crdiv.appendChild(crparag);
+    crparag.innerHTML = nome
+}
+
+
+
 
 
 
