@@ -34,10 +34,10 @@ const main = document.getElementById("main"); // seleziono il div con id main e 
 const crcontainer = document.createElement("div"); // creo un elemento div e mi salvo tutto il procedimento in una costante
 crcontainer.classList.add("container"); // aggiungo una classe all'elemento mentre lo creo
 main.appendChild(crcontainer);// aggiungo al div prima selezionato un child
-let crdiv = document.createElement("div");// uguale a crcontainer
-let crparag = document.createElement("p");// uguale a crcontainer
-crcontainer.appendChild(crdiv);// stesso concetto della riga 30
-crdiv.appendChild(crparag);// stesso concetto della riga 30
+const crdiv = document.createElement("div");// uguale a crcontainer
+const crparag = document.createElement("p");// uguale a crcontainer
+crcontainer.appendChild(crdiv);// stesso concetto
+crdiv.appendChild(crparag);// stesso concetto 
 
 for(let i =0;i<arr.length;i++){ // creo un ciclo che esegue istruzione tante volte finchè non arrivo alla lunghezza dell'array
 
