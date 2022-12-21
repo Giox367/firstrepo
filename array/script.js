@@ -4,7 +4,7 @@ let arr = new Array(); // Creo un nuovo array
 
 // arr = ['Number','String','Boolean','Undefined','Null','Object']
 
-// let arr = ['Number','String','Boolean','Undefined','Null','Object']
+ // let arr = ['Number','String','Boolean','Undefined','Null','Object']
 
 let primoelemento = 'Primo';
 
