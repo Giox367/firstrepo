@@ -27,6 +27,9 @@ console.log(arr);
 
 // arr = ['Number','String','Boolean','Undefined','Null','Object']
 
+// let arr = ['Number','String','Boolean','Undefined','Null','Object']
+
+
 const main = document.getElementById("main"); // seleziono il div con id main e lo conservo 
 const crcontainer = document.createElement("div"); // creo un elemento div e mi salvo tutto il procedimento in una costante
 crcontainer.classList.add("container"); // aggiungo una classe all'elemento mentre lo creo
@@ -38,8 +41,8 @@ crdiv.appendChild(crparag);// stesso concetto della riga 30
 
 for(let i =0;i<arr.length;i++){ // creo un ciclo che esegue istruzione tante volte finchè non arrivo alla lunghezza dell'array
 
-    let crdiv = document.createElement("div");
-    let crparag = document.createElement("p");              // definisco logicamente quello che devo fare per ogni volta che eseguo il ciclo, in questo caso per quanto è lungo l'array
+const crdiv = document.createElement("div");
+const crparag = document.createElement("p");              // definisco logicamente quello che devo fare per ogni volta che eseguo il ciclo, in questo caso per quanto è lungo l'array
     crcontainer.appendChild(crdiv);
     crdiv.appendChild(crparag);
     crparag.innerHTML = `${arr[i]}`// aggiungo al paragrafo il valore dell'array in posizione i
@@ -50,22 +53,32 @@ let j = 0;   // i e j sono standard convenzionali per definire variabili contato
 
 while(j<arr.length){
 
-    let crdiv = document.createElement("div");
-    let crparag = document.createElement("p");              
+    const crdiv = document.createElement("div");
+    const crparag = document.createElement("p");              
     crcontainer.appendChild(crdiv);
     crdiv.appendChild(crparag);
     crparag.innerHTML = `${arr[j]}`
     j++
 }
 
+
+// SOLO SE SI LAVORA CON ARRAY!
+
+
 for(nome of arr){
 
-    let crdiv = document.createElement("div");
-    let crparag = document.createElement("p");              
+    const crdiv = document.createElement("div");
+    const crparag = document.createElement("p");              
     crcontainer.appendChild(crdiv);
     crdiv.appendChild(crparag);
     crparag.innerHTML = nome
 }
+
+arr.forEach((nome)=>{const crdiv = document.createElement("div"); // Da approfondire in seguito
+const crparag = document.createElement("p");              
+crcontainer.appendChild(crdiv);
+crdiv.appendChild(crparag);
+crparag.innerHTML = nome})
 
 
 
