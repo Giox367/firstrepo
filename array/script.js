@@ -2,19 +2,23 @@
 
 let arr = new Array(); // Creo un nuovo array 
 
-let primoelemento = 'Giovanni';
+// arr = ['Number','String','Boolean','Undefined','Null','Object']
+
+// let arr = ['Number','String','Boolean','Undefined','Null','Object']
+
+let primoelemento = 'Primo';
 
 arr.push(primoelemento); // Inserisco un elemento in ultima posizione dell'array
 
 console.log(arr);
 
-let secondoelemento = 'Rosario';
+let secondoelemento = 'Secondo';
 
 arr.push(secondoelemento);
 
 console.log(arr);
 
-let terzoelemento = 'Martina';
+let terzoelemento = 'Terzo';
 
 arr.push(terzoelemento);
 
@@ -25,9 +29,13 @@ console.log(arr);
 //console.log(arr);
 
 
-// arr = ['Number','String','Boolean','Undefined','Null','Object']
 
-// let arr = ['Number','String','Boolean','Undefined','Null','Object']
+
+
+
+
+
+
 
 
 const main = document.getElementById("main"); // seleziono il div con id main e lo conservo 
@@ -39,6 +47,17 @@ const crparag = document.createElement("p");// uguale a crcontainer
 crcontainer.appendChild(crdiv);// stesso concetto
 crdiv.appendChild(crparag);// stesso concetto 
 
+
+
+
+
+
+
+
+
+
+
+
 for(let i =0;i<arr.length;i++){ // creo un ciclo che esegue istruzione tante volte finchè non arrivo alla lunghezza dell'array
 
 const crdiv = document.createElement("div");
@@ -48,6 +67,17 @@ const crparag = document.createElement("p");              // definisco logicamen
     crparag.innerHTML = `${arr[i]}`// aggiungo al paragrafo il valore dell'array in posizione i
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 let j = 0;   // i e j sono standard convenzionali per definire variabili contatore
 
@@ -60,6 +90,19 @@ while(j<arr.length){
     crparag.innerHTML = `${arr[j]}`
     j++
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // SOLO SE SI LAVORA CON ARRAY!
